@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: `${import.meta.env.VITE_FRONTEND_URL}`,
+    origin: `${process.env.VITE_FRONTEND_URL}`,
     credentials: true,
   })
 );
